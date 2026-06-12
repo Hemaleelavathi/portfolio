@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      /* background:#f4f4f4;
+      color:#333; */
+      background:black;
+      color:white;
+    }
+
+    header{
+      /* background:#222; */
+      color:white;
+      background:#000;
+      padding:20px;
+      /* text-align:center; */
+      justify-content: flex-start;
+      display: flex;
+    }
+
+    nav{
+      margin-top:10px;
+      justify-content: flex-end;
+      display: flex;
+      flex: 1;
+      gap: 25px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+    }
+
+    nav a:hover{
+    color:#38bdf8;
+    transition:0.3s;
+    }
+
+    section{
+      padding:50px 20px;
+      text-align:center;
+    }
+
+    .home{
+      /* background:white; */
+      color:#cbd5e1;
+      padding:80px 20px;
+    }
+
+    .home h1{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    .home p{
+      font-size:18px;
+      color:gray;
+    }
+
+    .btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:#007bff;
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+
+  transition:0.3s;
+
+  box-shadow:
+  0 5px 15px rgba(0,0,0,0.4);
+}
+
+    .btn:hover{
+  transform:
+  translateY(-5px)
+  scale(1.05);
+
+  background:#38bdf8;
+
+  box-shadow:
+  0 0 20px #38bdf8;
+}
+
+    .skills-container,
+    .projects-container{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .card{
+  background:rgba(17, 24, 39, 0.8);
+  color:white;
+  padding:20px;
+  width:300px;
+  border-radius:20px;
+  backdrop-filter:blur(10px);
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.5);
+
+  transition:0.4s ease;
+
+  transform-style:preserve-3d;
+}
+
+    .card:hover{
+  transform:
+  rotateY(10deg)
+  rotateX(10deg)
+  translateY(-10px);
+
+  box-shadow:
+  0 0 25px #38bdf8;
+}
+
+    footer{
+      /* background:#222; */
+      background:#000;
+      color:white;
+      text-align:center;
+      padding:15px;
+    }
+
+    #message{
+      margin-top:15px;
+      color:green;
+      font-weight:bold;
+    }
+
+    .title{
+    color:#38bdf8;
+    font-size:35px;
+    margin-bottom:40px;
+    }
+
+    .about-text{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+    color:#cbd5e1;
+    font-size:18px;
+    text-align:justify;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Hema Leelavathi N</h1>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section class="home">
+    <h1>Hello, I'm Hema Leelavathi N👋</h1>
+    <p>Aspiring Software Engineer</p>
+
+    <!-- <a href="#" class="btn" onclick="showMessage()">
+      view resume
+    </a> -->
+
+    <a href="HemaResume.pdf"
+    download
+    class="btn">
+    Download Resume
+</a>
+
+    <p id="message"></p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2 class="title">About Me</h2>
+    <br>
+
+    <!-- <p>
+      I am a Computer Science student interested in
+      Web Development and Software Engineering.
+    </p> -->
+
+    <p class="about-text">
+  Motivated Computer Science student currently pursuing
+  Python Full Stack Development with a passion for creating
+  modern and user-friendly web applications.
+  Skilled in HTML, CSS, JavaScript, Python, and C programming.
+  Interested in Software Development, Artificial Intelligence,
+  and problem-solving.
+  Seeking opportunities to enhance my technical knowledge
+  and build impactful real-world projects.
+  </p>
+  </section>
+
+  <!-- EDUCATION -->
+
+<section id="education">
+
+  <h2 class="title">
+    Education
+  </h2>
+
+  <div class="projects-container">
+
+    <!-- COLLEGE -->
+
+    <div class="card">
+
+      <h3>
+        B.E Computer Science and Engineering
+      </h3>
+
+      <br>
+
+      <p>
+        Sethu Institute of Technology
+      </p>
+
+      <br>
+
+      <p>
+        Graduation Year : 2028
+      </p>
+
+      <br>
+
+      <p>
+        CGPA : 8.4 (Up to 3rd Semester)
+      </p>
+
+    </div>
+
+    <!-- HSC -->
+
+    <div class="card">
+
+      <h3>
+        Higher Secondary Education
+      </h3>
+
+      <br>
+
+      <p>
+        Meenakshi Matric Hr. Sec School
+      </p>
+
+      <br>
+
+      <p>
+        Completed : 2024
+      </p>
+
+      <br>
+
+      <p>
+        Percentage : 85.3%
+      </p>
+
+    </div>
+
+    <!-- SSLC -->
+
+    <div class="card">
+
+      <h3>
+        SSLC
+      </h3>
+
+      <br>
+
+      <p>
+        Meenakshi Matric Hr. Sec School
+      </p>
+
+      <br>
+
+      <p>
+        Completed : 2022
+      </p>
+
+      <br>
+
+      <p>
+        Percentage : 79.4%
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="title">Skills</h2>
+
+    <div class="skills-container">
+
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">C++</div>
+      <div class="card">Python</div>
+      <div class="card">MySQL</div>
+      <div class="card">Django</div>
+      <div class="card">MongoDB</div>
+
+    </div>
+  </section>
+
+<section id="projects">
+
+  <h2 class="title">
+    My Projects
+  </h2>
+
+  <div class="projects-container">
+
+    <!-- PROJECT 1 -->
+
+    <div class="card">
+
+      <img
+      src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop"
+      style="width:100%; height:180px; object-fit:cover; border-radius:10px;">
+
+      <br><br>
+
+      <h3>Travel Safety Assistance System</h3>
+
+      <br>
+
+      <p>
+        A travelling-based safety application that helps users
+        locate nearby hospitals and police stations during emergencies
+        using location-based services in <q>offline</q>.
+      </p>
+
+      <br>
+
+      <a href="https://github.com/Harinikanagaraju/Explore-maker.git"
+      target="_blank"
+      class="btn">
+        View Project
+      </a>
+
+    </div>
+
+    <!-- PROJECT 2 -->
+
+    <div class="card">
+
+      <img
+      src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+      style="width:100%; height:180px; object-fit:cover; border-radius:10px;">
+
+      <br><br>
+
+      <h3>Feedback Management System</h3>
+
+      <br>
+
+      <p>
+        A Feedback Management System developed using C programming
+        to collect, manage, and analyze user feedback efficiently.
+      </p>
+
+      <br>
+
+      <a href="https://github.com/Hemaleelavathi/FEEDBACK-MANAGEMENT-SYSTEMS.git"
+      target="_blank"
+      class="btn">
+        View Project
+      </a>
+
+    </div>
+
+    <!-- PROJECT 3 -->
+
+    <div class="card">
+
+      <img
+      src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+      style="width:100%; height:180px; object-fit:cover; border-radius:10px;">
+
+      <br><br>
+
+      <h3>Bluetooth Controlled Car</h3>
+
+      <br>
+
+      <p>
+        Arduino-based Bluetooth controlled smart car with
+        ultrasonic sensors for obstacle detection and navigation.
+      </p>
+
+      <br>
+
+      <a href="#"
+      class="btn">
+        Coming Soon
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="title">Contact</h2>
+    <br>
+
+    <p>✉️Email: hemaleelavathi2257@gmail.com</p>
+    <p>📍Location: Tamil Nadu, India</p>
+    <p>📞Phone: 93455 08122</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Hema Leelavathi | Portfolio</p>
+  </footer>
+
+  <script>
+    function showMessage(){
+      document.getElementById("message").innerHTML =
+      "Thanks for visiting my portfolio!";
+    }
+  </script>
+
+</body>
+</html>
